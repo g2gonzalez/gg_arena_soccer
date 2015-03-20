@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gametime: MyString
+  hteam: MyString
+  ateam: MyString
+
+two:
+  gametime: MyString
+  hteam: MyString
+  ateam: MyString

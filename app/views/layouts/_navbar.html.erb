@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+    	<div class="navbar-header">
+			<!-- creates menu button on mobile view -->
+      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#stocks-collapse">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      	</button>
+			<%= link_to "GG Arena Soccer", root_path, class:"navbar-brand" %><!-- navbar brand -> ggarenasoccer -->
+    	</div>
+
+    	<div class="collapse navbar-collapse" id="stocks-collapse">
+      	<ul class="nav navbar-nav navbar-right">
+				
+					<li class="nav-links"><%= link_to "Schedule" %></li>
+					<!--<li class="nav-links"><%= link_to "About" %></li>-->
+					<!--<li class="nav-links"><%= link_to "Profile" %></li>-->
+		
+      	</ul>
+    	</div>
+	</div><!-- /container -->
+</nav><!-- /nav -->
