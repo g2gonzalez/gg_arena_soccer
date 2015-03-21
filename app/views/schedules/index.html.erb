@@ -20,7 +20,7 @@
 
   	<tbody>
 		<% @schedules.each do |schedule| %>
-			<% if schedule.division_type == 'U8' %>
+			<% if schedule.division_type == 'GU11' %>
 				<tr>
 					<td><%= schedule.gametime %></td>
 					<td><%= schedule.hteam %></td>
@@ -55,7 +55,7 @@
 
   	<tbody>
 		<% @schedules.each do |schedule| %>
-			<% if schedule.division_type == 'U11' %>
+			<% if schedule.division_type == 'BU11' %>
 				<tr>
 					<td><%= schedule.gametime %></td>
 					<td><%= schedule.hteam %></td>
@@ -90,7 +90,7 @@
 
   	<tbody>
 		<% @schedules.each do |schedule| %>
-			<% if schedule.division_type == 'U13' %>
+			<% if schedule.division_type == 'BU13' %>
 				<tr>
 					<td><%= schedule.gametime %></td>
 					<td><%= schedule.hteam %></td>
