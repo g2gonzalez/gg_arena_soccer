@@ -1,18 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Gametime:</strong>
+  <strong>Game Time:</strong>
   <%= @schedule.gametime %>
 </p>
 
 <p>
-  <strong>Hteam:</strong>
+  <strong>Home Team:</strong>
   <%= @schedule.hteam %>
 </p>
 
 <p>
-  <strong>Ateam:</strong>
+  <strong>Away Team:</strong>
   <%= @schedule.ateam %>
+</p>
+
+<p>
+  <strong>Division:</strong>
+  <%= @schedule.division_type %>
 </p>
 
 <%= link_to 'Edit', edit_schedule_path(@schedule) %> |

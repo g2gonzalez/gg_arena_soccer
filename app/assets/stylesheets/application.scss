@@ -13,11 +13,59 @@
  *= require_tree .
  *= require_self
  */
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
 
-@import "bootstrap";
+$navbar-default-bg: #00B16A;
+$navbar-default-brand-color: white;
+$navbar-default-link-color: white; //#ecf0f1;
+$navbar-default-link-hover-color: #DCE0E0;
+$navbar-default-brand-hover-color: #DCE0E0;
+//$body-bg: #DCE0E0; //#ecf0f1;
+//$jumbotron-bg: white;
 
-body { padding-top: 60px; }
+body { 
+	padding-top: 85px; 
+}
+
+.container {
+	font-family: 'Ubuntu', sans-serif;
+}
 
 .center {
 	text-align: center;
 }
+
+.navbar {
+	height: 75px;
+	padding-top: 10px;
+	.navbar-brand{
+		font-size: 30px;
+		font-family: 'Lobster', cursive;
+	}
+	.nav-links {
+		font-size: 17px;
+		font-family: 'Ubuntu', sans-serif;
+		padding: 2px;
+		margin-top: 8px;
+		margin-right: 15px;
+		border: 2px solid white;
+		a {
+			padding: 5px;
+		}
+	}
+}
+
+.container > .main-jumbo {
+	background-color: #C5EFF7;
+}
+
+.container > .division-groups {
+	background-color: #C5EFF7;//#BDC3C7;
+}
+
+.table {
+	background-color: white;
+}
+	
+@import "bootstrap";
