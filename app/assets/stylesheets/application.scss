@@ -34,12 +34,11 @@ $navbar-default-brand-color: white;
 $navbar-default-brand-hover-color: $flat-orange;
 $navbar-default-toggle-icon-bar-bg: white;
 $navbar-default-toggle-border-color: white;
-$navbar-default-toggle-hover-bg: $flat-red;
+$navbar-default-toggle-hover-bg: $flat-orange;
 
 $jumbotron-padding: 10px;
 $jumbotron-bg: white;
  
-@import "bootstrap-sprockets";
 @import "bootstrap";
 
 body {
