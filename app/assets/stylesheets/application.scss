@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 @import url(http://fonts.googleapis.com/css?family=Lobster);
  
 $navy-blue: #242d36;
@@ -38,8 +39,6 @@ $navbar-default-toggle-hover-bg: $flat-orange;
 
 $jumbotron-padding: 10px;
 $jumbotron-bg: white;
- 
-@import "bootstrap";
 
 body {
 	padding-top: 80px;
@@ -85,3 +84,5 @@ body {
 		}
 	}
 }
+
+@import "bootstrap";
