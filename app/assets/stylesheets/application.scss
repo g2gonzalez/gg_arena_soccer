@@ -3,7 +3,7 @@
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any styles
@@ -13,59 +13,76 @@
  *= require_tree .
  *= require_self
  */
-@import url(https://fonts.googleapis.com/css?family=Lobster);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+ 
+$navy-blue: #242d36;
+$flat-red: #f45145;
+$bg-gray: #d4d7dc;
+$light-gray: #f0f1f3;
+$dark-green: #005a31;
+$flat-orange: #ff9009;
 
-$navbar-default-bg: #00B16A;
+$navbar-border-radius: 0px;
+$navbar-height: 80px;
+$navbar-default-border: $flat-orange;
+$navbar-default-bg: $dark-green;
+$navbar-default-color: white; 
+$nav-link-padding: 0px 0px;
+$navbar-default-link-color: white;
+$navbar-default-link-hover-color: $flat-orange;
 $navbar-default-brand-color: white;
-$navbar-default-link-color: white; //#ecf0f1;
-$navbar-default-link-hover-color: #DCE0E0;
-$navbar-default-brand-hover-color: #DCE0E0;
-//$body-bg: #DCE0E0; //#ecf0f1;
-//$jumbotron-bg: white;
+$navbar-default-brand-hover-color: $flat-orange;
+$navbar-default-toggle-icon-bar-bg: white;
+$navbar-default-toggle-border-color: white;
+$navbar-default-toggle-hover-bg: $flat-red;
 
-body { 
-	padding-top: 85px; 
-}
+$jumbotron-padding: 10px;
+$jumbotron-bg: white;
+ 
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-.container {
-	font-family: 'Ubuntu', sans-serif;
+body {
+	padding-top: 80px;
+	background-color: $bg-gray;
 }
 
 .center {
 	text-align: center;
 }
 
-.navbar {
-	height: 75px;
-	padding-top: 10px;
-	.navbar-brand{
-		font-size: 30px;
-		font-family: 'Lobster', cursive;
+.date-color {
+	color: $flat-orange;
+}
+
+.gray-words {
+	font-size: 10px;
+	color: #777;
+}
+
+.jumbotron {
+	border: 1.5px solid $flat-orange;
+	margin-top: 25px;
+	.jumbo-heading {
+		color: $flat-orange;
 	}
-	.nav-links {
-		font-size: 17px;
-		font-family: 'Ubuntu', sans-serif;
-		padding: 2px;
-		margin-top: 8px;
+}
+
+.navbar{
+	.navbar-brand {
+		font-family: 'Lobster', cursive;
+		font-size: 28px;
+	}
+	.nav-links > a {
 		margin-right: 15px;
+	}
+	.w-outline > a {
+		margin-top: 20px;
+		margin-right: 15px;
+		padding: 5px;
 		border: 2px solid white;
-		a {
-			padding: 5px;
+		&:hover {
+			border: 2px solid $flat-orange;
 		}
 	}
 }
-
-.container > .main-jumbo {
-	background-color: #C5EFF7;
-}
-
-.container > .division-groups {
-	background-color: #C5EFF7;//#BDC3C7;
-}
-
-.table {
-	background-color: white;
-}
-	
-@import "bootstrap";
