@@ -18,7 +18,7 @@
  
 $navy-blue: #242d36;
 $flat-red: #f45145;
-$bg-gray: #d4d7dc;
+$bg-gray: #c6cad1;
 $light-gray: #f0f1f3;
 $dark-green: #005a31;
 $flat-orange: #ff9009;
@@ -38,7 +38,7 @@ $navbar-default-toggle-border-color: white;
 $navbar-default-toggle-hover-bg: $flat-orange;
 
 $jumbotron-padding: 10px;
-$jumbotron-bg: white;
+$jumbotron-bg: red;
 
 body {
 	padding-top: 80px;
@@ -59,11 +59,7 @@ body {
 }
 
 .jumbotron {
-	border: 1.5px solid $flat-orange;
 	margin-top: 25px;
-	.jumbo-heading {
-		color: $flat-orange;
-	}
 }
 
 .navbar{
