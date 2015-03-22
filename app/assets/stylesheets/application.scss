@@ -18,7 +18,7 @@
  
 $navy-blue: #242d36;
 $flat-red: #f45145;
-$bg-gray: #c6cad1;
+$bg-gray: #d4d7dc;
 $light-gray: #f0f1f3;
 $dark-green: #005a31;
 $flat-orange: #ff9009;
@@ -38,7 +38,9 @@ $navbar-default-toggle-border-color: white;
 $navbar-default-toggle-hover-bg: $flat-orange;
 
 $jumbotron-padding: 10px;
-$jumbotron-bg: red;
+$jumbotron-bg: white;
+
+@import "bootstrap";
 
 body {
 	padding-top: 80px;
@@ -80,5 +82,3 @@ body {
 		}
 	}
 }
-
-@import "bootstrap";
