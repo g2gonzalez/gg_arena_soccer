@@ -19,6 +19,7 @@
 $navy-blue: #242d36;
 $flat-red: #f45145;
 $bg-gray: #d4d7dc;
+$font-gray: #727272;
 $light-gray: #f0f1f3;
 $dark-green: #005a31;
 $flat-orange: #ff9009;
@@ -40,11 +41,14 @@ $navbar-default-toggle-hover-bg: $flat-orange;
 $jumbotron-padding: 10px;
 $jumbotron-bg: white;
 
+$table-border-color: $font-gray;
+
 @import "bootstrap";
 
 body {
 	padding-top: 80px;
 	background-color: $bg-gray;
+	color: $font-gray;
 }
 
 .center {
@@ -62,6 +66,10 @@ body {
 
 .jumbotron {
 	margin-top: 25px;
+	-webkit-box-shadow: 10px 10px 17px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 17px -7px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 17px -7px rgba(0,0,0,0.75);
+	//background-image: url('astroturf.jpg');
 }
 
 .navbar{
@@ -81,4 +89,13 @@ body {
 			border: 2px solid $flat-orange;
 		}
 	}
+}
+
+.division-heading {
+	margin-top: 5px;
+	margin-bottom: 8px;
+}
+
+.table > thead > tr > th {
+	color: $flat-orange;
 }
