@@ -65,7 +65,8 @@ body {
 }
 
 .jumbotron {
-	margin-top: 25px;
+	margin-top: 35px;
+	margin-bottom: 55px;
 	-webkit-box-shadow: 10px 10px 17px -7px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 17px -7px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 17px -7px rgba(0,0,0,0.75);
@@ -92,10 +93,18 @@ body {
 }
 
 .division-heading {
+	color: #727272;
 	margin-top: 5px;
-	margin-bottom: 8px;
+	margin-bottom: 5px;
 }
 
 .table > thead > tr > th {
 	color: $flat-orange;
+}
+
+.panel {
+	margin-top: 30px;
+	-webkit-box-shadow: 10px 10px 17px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 17px -7px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 17px -7px rgba(0,0,0,0.75);
 }
